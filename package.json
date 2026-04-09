@@ -12,19 +12,22 @@
         "format": "prettier --config .prettierrc --write src/**/*.{ts,tsx}",
         "preview": "vite preview",
         "test": "jest --watch --config=jest.config.js",
-        "test:cov": "jest --coverage --config=jest.config.js",
-        "cy:open": "cypress open",
-        "cy:run": "cypress run"
+        "test:cov": "jest --coverage --config=jest.config.js"
     },
     "dependencies": {
+        "@types/file-saver": "^2.0.7",
+        "@types/uuid": "^10.0.0",
+        "@xyflow/react": "^12.10.2",
+        "docx": "^9.6.1",
+        "file-saver": "^2.0.5",
         "react": "^19.1.1",
-        "react-dom": "^19.1.1"
+        "react-dom": "^19.1.1",
+        "uuid": "^13.0.0"
     },
     "devDependencies": {
         "@eslint/js": "^9.36.0",
         "@swc/core": "^1.13.5",
         "@swc/jest": "^0.2.39",
-        "@testing-library/cypress": "^8.0.7",
         "@testing-library/dom": "^10.4.1",
         "@testing-library/jest-dom": "^5.16.5",
         "@testing-library/react": "^16.3.0",
@@ -34,7 +37,6 @@
         "@types/react": "^19.1.16",
         "@types/react-dom": "^19.1.9",
         "@vitejs/plugin-react": "^5.0.4",
-        "cypress": "^10.3.0",
         "eslint": "^9.36.0",
         "eslint-config-prettier": "^10.1.8",
         "eslint-output": "^4.0.2",
